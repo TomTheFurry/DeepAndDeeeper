@@ -15,11 +15,11 @@
     <Configurations>Debug;Release;Release1.6</Configurations>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\v1.5\Assemblies\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <OutputPath>..\v1.6r2\Assemblies\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;v16</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -82,6 +82,7 @@
     <Compile Include="JobGiver_ExitMap_Patch.cs" />
     <Compile Include="JobGiver_LeaveCave.cs" />
     <Compile Include="JobGiver_LootAround.cs" />
+    <Compile Include="JobGiver_Patch.cs" />
     <Compile Include="LordJob_MineClusters.cs" />
     <Compile Include="LordToil_MineClusters.cs" />
     <Compile Include="MapInfo_Tile_Patch.cs" />
@@ -138,7 +139,7 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <PackageReference Include="Krafs.Rimworld.Ref" Version="1.5.4063" GeneratePathProperty="true" />
+        <PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.4543" GeneratePathProperty="true" />
       </ItemGroup>
     </Otherwise>
   </Choose>
